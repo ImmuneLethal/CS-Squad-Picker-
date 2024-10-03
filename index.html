@@ -5,16 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Squad Randomizer</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-image: url('backround.png'); /* Replace 'image.png' with the actual file name */
-        background-size: 100% 100%; /* Ensures the background image covers the entire page */
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-image: url('background.png'); /* Replace 'background.png' with the actual file name */
+        background-size: cover; /* Ensures the background image covers the entire page */
         background-position: center; /* Centers the background image */
         background-repeat: no-repeat; /* Prevents the image from repeating */
-        color: white; /* Changes the text color to white for better contrast *
-            padding: 20px;
-        }
+        background-attachment: fixed; /* Keeps the background fixed, even when scrolling */
+        min-height: 100vh; /* Ensures the body covers the full viewport height */
+        color: white; /* Changes the text color to white for better contrast */
+        padding: 20px;
+        margin: 0; /* Removes any default margin */
+    }
+</style>
+
         #squadForm {
             margin-bottom: 20px;
         }
