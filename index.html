@@ -5,22 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Squad Randomizer</title>
     <style>
-    body {
-        font-family: Arial, sans-serif;
-        text-align: center;
-        background-image: url('background.png'); /* Make sure this file name is correct */
-        background-size: cover; /* Ensures the background image covers the entire page */
-        background-position: center; /* Centers the background image */
-        background-repeat: no-repeat; /* Prevents the image from repeating */
-        background-attachment: fixed; /* Keeps the background fixed, even when scrolling */
-        background-color: black; /* Temporary fallback color to ensure text is visible */
-        min-height: 100vh; /* Ensures the body covers the full viewport height */
-        color: white; /* Makes the text white so it's visible on dark backgrounds */
-        padding: 20px;
-        margin: 0; /* Removes any default margin */
-    }
-</style>
-
+        /* This section styles the background */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-image: url('image.png'); /* Replace 'image.png' with your uploaded image name */
+            background-size: cover; /* Makes the background cover the entire page */
+            background-position: center; /* Centers the background */
+            background-repeat: no-repeat; /* Prevents repeating */
+            color: white; /* Set the text color to white for visibility */
+        }
         #squadForm {
             margin-bottom: 20px;
         }
@@ -54,7 +48,7 @@
         function selectSquad() {
             // Get player names and split them into an array
             let playerNames = document.getElementById('playerNames').value.split(',');
-
+            
             // Trim any extra spaces from the names
             playerNames = playerNames.map(name => name.trim());
 
